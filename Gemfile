@@ -4,6 +4,8 @@ source 'http://rubygems.org'
 
 gem "middleman", "~> 3.3.10"
 gem "middleman-blog", "~> 3.5.3"
+gem "middleman-syntax", "~> 2.0.0"
+gem "redcarpet"
 gem "neat"
 
 # For feed.xml.builder
