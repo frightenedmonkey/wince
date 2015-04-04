@@ -1,0 +1,14 @@
+@import "bourbon";
+@import "neat";
+
+.outside {
+        @include outer-container;
+}
+
+.main {
+        @include span-columns(8);
+}
+
+.aside {
+        @include span-columns(3);
+}
