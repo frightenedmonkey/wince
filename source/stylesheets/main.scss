@@ -1,14 +1,63 @@
 @import "bourbon";
-@import "neat";
+@import "neat/neat";
+@import "base/base";
 
 .outside {
         @include outer-container;
 }
 
-.main {
-        @include span-columns(8);
+.heading {
+        @include span-columns(12);
+
+        h1 {
+                font-size: $base-h1-size;
+        }
+
 }
 
-.aside {
+.main-container {
+        @include span-columns(12);
+}
+
+.left-column {
         @include span-columns(3);
+        padding: $base-spacing;
+        .twitters {
+        }
+}
+
+.main {
+        @include span-columns(4 of 9);
+        h1 {
+                margin-bottom: 0;
+                font-size: $article-h1-size;
+                a {
+                        color: $dark-gray;
+                }
+        }
+        h2 {
+                margin-bottom: 0;
+                font-size: $article-h2-size;
+                a {
+                        color: $dark-gray;
+                }
+        }
+        h4 {
+                font-size: $article-h4-size;
+        }
+}
+
+.right-column {
+        @include span-columns(3);
+        padding: $base-spacing;
+}
+
+.highlight {
+        @include shift(1);
+}
+
+.article-date {
+        font-size: $small-font-size;
+        font-color: $font-light-color;
+        padding: $article-date-spacing;
 }
