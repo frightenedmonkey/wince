@@ -11,6 +11,9 @@
 
         h1 {
                 font-size: $base-h1-size;
+                a {
+                  color: $dark-gray;
+                }
         }
 
 }
