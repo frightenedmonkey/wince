@@ -11,15 +11,11 @@
   </head>
   <body class="outside">
     <div class="main-container">
-      <div class="heading">
-        <h1><a href="/">Wincing My Way Through Software</a></h1>
-      </div>
+
+    <%= partial "header" %>
 
     <div class="left-column">
-      <section class="twitters">
-        <a class="twitter-timeline" href="https://twitter.com/mlewis" data-widget-id="586742020011491329">Tweets by @mlewis</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </section>
+      <%= partial "twitters" %>
     </div>
 
     <div class="main" id="main" role="main">
@@ -28,20 +24,9 @@
     </div>
 
     <aside class="right-column">
-      <section class="articles">
-      <h4>Recent Articles</h4> <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
-      </section>
+      <%= partial "recent_articles" %>
+      <%= partial "tags" %>
 
-      <h4>Tags</h4>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-        <% end %>
-      </ol>
 
     </aside>
   </body>

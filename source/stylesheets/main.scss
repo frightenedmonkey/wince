@@ -6,13 +6,15 @@
         @include outer-container;
 }
 
-.heading {
+.header {
         @include span-columns(12);
+        background-color: $blue;
 
         h1 {
                 font-size: $base-h1-size;
+                color: white;
                 a {
-                  color: $dark-gray;
+                  color: white;
                 }
         }
 
@@ -31,6 +33,7 @@
 
 .main {
         @include span-columns(4 of 9);
+        margin-top: 1.4em;
         h1 {
                 margin-bottom: 0;
                 font-size: $article-h1-size;
