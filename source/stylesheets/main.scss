@@ -56,6 +56,16 @@
 .right-column {
         @include span-columns(3);
         padding: $base-spacing;
+        .sub-element {
+                margin-top: 1.5em;
+        }
+        p {
+                font-size: $small-font-size;
+        }
+}
+
+.smaller-text {
+        font-size: $smaller-font-size;
 }
 
 .highlight {

@@ -1,8 +1,8 @@
-<section class="tags">
-<h4>Tags</h4>
-  <ol>
-  <% blog.tags.each do |tag, articles| %>
-    <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-  <% end %>
+<section class="tags sub-element">
+  <h4>Tags</h4>
+    <ol class="smaller-text">
+    <% blog.tags.each do |tag, articles| %>
+      <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+    <% end %>
   </ol>
 </section>
