@@ -8,13 +8,15 @@
 
 .header {
         @include span-columns(12);
+        text-align: center;
         background-color: $blue;
 
         h1 {
                 font-size: $base-h1-size;
                 color: white;
+                margin: 0.5em;
                 a {
-                  color: white;
+                        color: white;
                 }
         }
 
