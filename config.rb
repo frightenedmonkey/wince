@@ -107,12 +107,12 @@ end
 # Configuration variables specific to each project
 #------------------------------------------------------------------------
 AWS_BUCKET                      = 'mlewis.io'
-AWS_CLOUDFRONT_DISTRIBUTION_ID  = 'E104948DGLTLY5'
 
 # Variables: Sent in on CLI by rake task via ENV
 #------------------------------------------------------------------------
 AWS_ACCESS_KEY                  = ENV['AWS_ACCESS_KEY']
 AWS_SECRET                      = ENV['AWS_SECRET']
+AWS_CLOUDFRONT_DISTRIBUTION_ID  = ENV['AWS_CLOUDFRONT_DISTRIBUTION_ID']
 
 # https://github.com/fredjean/middleman-s3_sync
 activate :s3_sync do |s3_sync|
