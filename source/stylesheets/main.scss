@@ -53,6 +53,9 @@
         h4 {
                 font-size: $article-h4-size;
         }
+        ul {
+                @extend %default-ul;
+        }
 }
 
 .right-column {
