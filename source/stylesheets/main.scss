@@ -74,7 +74,7 @@
 }
 
 .highlight {
-        @include shift(1);
+        overflow: auto;
 }
 
 .article-date {
