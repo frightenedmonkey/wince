@@ -135,7 +135,7 @@ as an example of the workflow from the rails/rspec world.
 
 But what happens if you start from the inside, at the base level--the level
 of the constituent parts? I think the trap that many programmers may fall into
-when confronted with the situation detail above is to provide a generic app
+when confronted with the situation detailed above is to provide a generic app
 cookbook that can be used by all ruby apps. The very first thought that I, as a
 normal developer would have, is to figure out how to make sure the code that I'm
 writing is reusable in the future.

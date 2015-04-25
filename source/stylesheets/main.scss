@@ -82,3 +82,10 @@
         font-color: $font-light-color;
         padding: $article-date-spacing;
 }
+
+.footnotes {
+        font-size: $smaller-font-size;
+        ol {
+                @extend %default-ol;
+        }
+}
