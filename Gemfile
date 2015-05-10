@@ -10,6 +10,9 @@ gem "nokogiri"
 gem "redcarpet"
 gem "neat"
 gem "bitters"
+gem "middleman-s3_sync"
+gem "fog-aws", "= 0.1.1"
+gem 'pry'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"

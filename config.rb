@@ -109,7 +109,7 @@ configure :build do
 end
 # Configuration variables specific to each project
 #------------------------------------------------------------------------
-AWS_BUCKET                      = 'mlewis.io'
+AWS_BUCKET                      = [ENV]['AWS_BUCKET']
 
 # Variables: Sent in on CLI by rake task via ENV
 #------------------------------------------------------------------------
@@ -123,6 +123,8 @@ activate :s3_sync do |s3_sync|
   s3_sync.aws_access_key_id          = AWS_ACCESS_KEY
   s3_sync.aws_secret_access_key      = AWS_SECRET
   s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.acl                        = 'public-read'
+  s3_sync.region                     = 'us-west-2'
 end
 
 # https://github.com/andrusha/middleman-cloudfront
