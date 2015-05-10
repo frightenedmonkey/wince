@@ -109,7 +109,7 @@ configure :build do
 end
 # Configuration variables specific to each project
 #------------------------------------------------------------------------
-AWS_BUCKET                      = [ENV]['AWS_BUCKET']
+AWS_BUCKET                      = ENV['AWS_BUCKET']
 
 # Variables: Sent in on CLI by rake task via ENV
 #------------------------------------------------------------------------
